@@ -67,7 +67,7 @@ async function postArticleToTelegram(chatID) {
   }
 }
 
-//this is an Event Listener provided by the node-telegram-bot-API
+//this is an Event Listener provided by node-telegram-bot module
 //I have used /newarticle to generate a new random Wikipedia article
 bot.onText(/\/newarticle/, (msg) => {
   const chatID = msg.chat.id;
