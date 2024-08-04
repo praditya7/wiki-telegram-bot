@@ -17,7 +17,7 @@ Dependencies are present in package.json file
 
 - Replace 'chatID' with your own chatID. chatID can be generated using Rose bot. Add Rose bot to the desired conversation. After that type /id and you will get the chatID.
 
-- After the above steps we can run the script using 'node index.js'.
+- After the above steps we can run the script using 'node index.js' in the terminal.
 
 - You can generate a new article at will using
   /newarticle in the the telegram chat. If it is a group chat, make sure the custom bot is an admin and has the permission to send messages.
