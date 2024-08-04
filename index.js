@@ -54,7 +54,7 @@ async function getSummary(articleTitle) {
 }
 
 // Function to fetch summary and post to Telegram
-async function postArticleToTelegram() {
+async function postArticleToTelegram(chatID) {
   try {
     const articleTitle = await getArticle();
     if (articleTitle) {
@@ -68,5 +68,9 @@ async function postArticleToTelegram() {
   }
 }
 
-// Execute the function
-postArticleToTelegram();
+bot.onText(/\/newarticle/, (msg) => {
+  const chatID = msg.chat.id;
+  postArticleToTelegram(chatID);
+});
+
+postArticleToTelegram(chatID);
