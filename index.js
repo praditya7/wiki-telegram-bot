@@ -1,8 +1,8 @@
 const axios = require("axios");
 const TelegramBot = require("node-telegram-bot-api");
 
-const telegramBotToken = "7443063848:AAF9Qvh1YIWl4sMRIpXrmVgTiKgozZIcjs0"; //BotID generated using BotFather
-const chatID = "-1002218125397"; // ChatID of the group
+const telegramBotToken = #yourToken; //BotID generated using BotFather
+const chatID = #yourChatID; // ChatID of the group
 
 // Initializing the Telegram Bot
 const bot = new TelegramBot(telegramBotToken, { polling: true });
